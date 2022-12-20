@@ -11,7 +11,11 @@ class Stack {
     }
   }
 
-  void remove(int value) {
+  void delete(int value) {
+    Node n = head;
+    head = n.next;
+    n.next = null;
+    
   }
 
   void udskriv() {
