@@ -1,11 +1,13 @@
 void setup() {
-Node n1 = new Node(1); Node n2 = new Node(2); Node n3 = new Node(3);
-n1.next = n2; n2.next = n3;
-
-
+/*
 Stack s = new Stack();
-  s.insert(1); s.insert(2); s.insert(3);
+  s.insert(1); s.insert(2); s.insert(3); s.insert(4); s.insert(5);
+  s.delete();
   s.udskriv();
-  s.delete(2);
-
+  */
+  
+Queue q = new Queue();
+  q.enqueue(1); q.enqueue(2); q.enqueue(3); q.enqueue(4); q.enqueue(5);
+  q.dequeue();
+  q.udskriv();
 }

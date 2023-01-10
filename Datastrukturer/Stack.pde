@@ -1,5 +1,6 @@
 class Stack {
   Node head;
+  Node tempNode;
 
   void insert(int value) {
     Node n = new Node(value);
@@ -11,10 +12,10 @@ class Stack {
     }
   }
 
-  void delete(int value) {
-    Node n = head;
-    head = n.next;
-    n.next = null;
+  void delete() {
+    tempNode = head;
+    head = tempNode.next;
+    tempNode.next = null;
     
   }
 
